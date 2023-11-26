@@ -5,6 +5,21 @@ public class Main {
         System.out.println("<*****> Percentual de Contribuição por Profissional/Cargo no projeto Sofware House <*****>" + "\n");
         
     
+        Ferramenta ide = new Ferramenta("VSCode");
+        Ferramenta photoshop = new Ferramenta("AutoCad");
+        Ferramenta MOffice = new Ferramenta("Excel");
+        Ferramenta SGBDs = new Ferramenta("MySQL");
+        Ferramenta totvs = new Ferramenta("Financeiro");
+
+        programador.escolherFerramenta(ide);
+        designer.escolherFerramenta(photoshop);
+        administrativo.escolherFerramenta(MOffice);
+        DBA.escolherFerramenta(SGBDs);
+        gerente.escolherFerramenta(totvs);
+
+        // Cada funcionário escolhe sua ferramenta
+
+
     public static void calcularPorcentagem(Funcionario funcionario) {
         if (funcionario.getFerramenta() != null) {
             System.out.println("Cargo: " + funcionario.getCargo() + " - Ferramenta Escolhida: " + funcionario.getFerramenta().getNome()+ " - Ok");
