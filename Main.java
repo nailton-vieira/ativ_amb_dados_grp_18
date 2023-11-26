@@ -7,6 +7,14 @@ public class Main {
         Ferramenta SGBDs = new Ferramenta("MySQL");
         Ferramenta totvs = new Ferramenta("Financeiro");
 
+        programador.escolherFerramenta(ide);
+        designer.escolherFerramenta(photoshop);
+        administrativo.escolherFerramenta(MOffice);
+        DBA.escolherFerramenta(SGBDs);
+        gerente.escolherFerramenta(totvs);
+
+        // Cada funcionário escolhe sua ferramenta
+
 
     public static void calcularPorcentagem(Funcionario funcionario) {
         if (funcionario.getFerramenta() != null) {
