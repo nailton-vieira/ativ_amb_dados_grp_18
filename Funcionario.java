@@ -19,4 +19,8 @@ public class Funcionario{
     public void escolherFerramenta(Ferramenta ferramenta) {
         this.ferramenta = ferramenta;
     }
+
+    public void reaizarDemanda(Demanda demanda) {
+        this.demanda = demanda;
+    }
 }
