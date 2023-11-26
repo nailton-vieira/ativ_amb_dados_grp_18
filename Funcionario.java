@@ -2,6 +2,8 @@ public class Funcionario{
     
     private String cargo;
     private Ferramenta ferramenta;
+    private Demanda demanda;
+    
   
 
     public Funcionario(String cargo) {
